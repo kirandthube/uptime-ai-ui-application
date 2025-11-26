@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="left-panel">
+    <img class="profile-img" [src]="profileDetails.avatar_url" alt="Profile" />
+
+    <h2>{{profileDetails.name}}</h2>
+    <p class="username">{{profileDetails.login}}</p>
+
+    <p class="bio">
+      {{profileDetails.bio}}
+    </p>
+
+    <button class="edit-btn">Edit Profile</button>
+
+    <div class="info">
+      <p>📍 {{profileDetails.location}}</p>
+      <p>📧 {{profileDetails.email}}</p>
+      <p>🔗 {{profileDetails.blog}}</p>
+      <p>🐦 {{profileDetails.twitter_username}}</p>
+    </div>
+
+    <h3>Achievements</h3>
+    <div class="achievements">
+      <img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png"/>
+      <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png"/>
+      <img src="https://github.githubassets.com/images/modules/profile/achievements/arctic-code-vault-contributor-default.png"/>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <h2>Popular repositories</h2>
+
+    <div class="repo-grid">
+        <div class="repo-card" *ngFor="let repo of repoDetails">
+            <div class="repo-header">
+            <h3>{{ repo.title }}</h3>
+            <span class="badge">{{ repo.visibility }}</span>
+            </div>
+
+            <p class="description">{{ repo.description }}</p>
+
+            <div class="language-info">
+            <span class="lang-dot" [style.background]="repo.color"></span>
+            {{ repo.language }}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title-row">
+        <h2>1,753 contributions in the last year</h2>
+        <span class="arrow">Contribution Settings ▼</span>
+    </div>
+
+    <div class="heatmap">
+        <div class="heatmap-box">
+                <div class="heatmap-container">
+                    <div id="heatmap"></div>
+                    
+                </div>
+                <div class="contribution-legend">
+                    <span class="learn-text">Learn how we count contributions</span>
+
+                    <div class="legend-right">
+                        <span>Less</span>
+
+                        <span class="box level-1"></span>
+                        <span class="box level-2"></span>
+                        <span class="box level-3"></span>
+                        <span class="box level-4"></span>
+                        <span class="box level-5"></span>
+
+                        <span>More</span>
+                    </div>
+                </div>
+        </div>
+        <div class="year-selector">
+            <div *ngFor="let y of yearList"
+                [class.active]="y === selectedYear"
+                (click)="onYearChange(y)">
+                {{ y }}
+            </div>
+        </div>
+    </div>
+    <app-contributions-radar></app-contributions-radar>
+  </div>
+</div>

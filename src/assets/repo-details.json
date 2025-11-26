@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Complete-Typescript-Bootcamp",
+    "visibility": "Public",
+    "description": "Course files for TypeScript Bootcamp",
+    "language": "TypeScript",
+    "color": "#3178c6"
+  },
+  {
+    "title": "Complete-HTML-Bootcamp",
+    "visibility": "Private",
+    "description": "Course files for HTML Bootcamp",
+    "language": "HTML",
+    "color": "#e34c26"
+  },
+  {
+    "title": "Complete-Javascript-Bootcamp",
+    "visibility": "Public",
+    "description": "Course files for JavaScript Bootcamp",
+    "language": "JavaScript",
+    "color": "#f1e05a"
+  },
+  {
+    "title": "Complete-CSS-Bootcamp",
+    "visibility": "Private",
+    "description": "Course files for CSS Bootcamp",
+    "language": "CSS",
+    "color": "#563d7c"
+  },
+  {
+    "title": "Complete-Java-Bootcamp",
+    "visibility": "Private",
+    "description": "Course files for Java Bootcamp",
+    "language": "Java",
+    "color": "#b07219"
+  },
+  {
+    "title": "Complete-Python-Bootcamp",
+    "visibility": "Public",
+    "description": "Course files for Python Bootcamp",
+    "language": "Python",
+    "color": "#3572A5"
+  }
+]

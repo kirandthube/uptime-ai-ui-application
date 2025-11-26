@@ -1,0 +1,71 @@
+.graph-section {
+  border: 1px solid #ddd;
+  padding: 15px 0;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 92%;
+  display: flex;
+}
+
+.left-col, .right-col {
+  flex: 5;
+}
+
+.middle-col {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.v-line {
+  width: 1px;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.activity-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tag-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #d0d7de;
+  background: #fff;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tag-btn:hover {
+  background: #f6f8fa;
+}
+
+.tag-icon {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 900px) {
+  .graph-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .middle-col {
+    display: none;
+  }
+}

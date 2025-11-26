@@ -1,0 +1,235 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.left-panel {
+  width: 25%;
+}
+
+.right-panel {
+  width: 75%;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.username {
+  color: gray;
+  margin-top: -10px;
+}
+
+.bio {
+  margin: 10px 0;
+}
+
+.edit-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.achievements img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #0969da;
+  color: #0969da;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.repo-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  padding-top: 0px;
+  border-radius: 8px;
+  /* width: 350px; */
+}
+
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  border: 1px solid #888;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: #fafafa;
+}
+.repo-header h3 {
+  color: #0969da;
+  cursor: pointer;
+}
+.repo-header h3:hover {
+  text-decoration: underline;
+}
+.lang-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.description{
+    margin-top: 0px;
+}
+
+.heatmap-box img {
+  width: 100%;
+  margin-top: 20px;
+}
+.heatmap-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  padding-top: 0px;
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+.heatmap-container {
+  position: relative;
+  width: 100%;
+}
+.heatmap-container {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  gap: 20px;
+  padding: 10px 0;
+}
+#heatmap {
+  width: calc(100% - 60px); /* enough space for the year selector */
+  max-width: 100%;
+}
+.heatmap{
+    display: flex;
+    gap:20px;
+}
+
+.year-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+}
+
+.year-selector div {
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.year-selector .active {
+  background-color: #0969da;
+  color: white;
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.title-row h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.contribution-legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+}
+
+.legend-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.box {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* Contribution color levels */
+.level-1 { background-color: #ebedf0; }  /* light grey */
+.level-2 { background-color: #9be9a8; }  /* light green */
+.level-3 { background-color: #40c463; }  /* medium green */
+.level-4 { background-color: #30a14e; }  /* dark green */
+.level-5 { background-color: #216e39; }  /* darkest green */
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+}

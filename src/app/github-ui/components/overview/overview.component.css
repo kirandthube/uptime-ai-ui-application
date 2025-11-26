@@ -233,3 +233,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media(max-width:768px){
+  .heatmap-box{
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  .heatmap-container {
+    width: max-content;
+  }
+}
+
